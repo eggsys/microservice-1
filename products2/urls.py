@@ -24,7 +24,7 @@ urlpatterns = [
     })),
     path('products/<str:pk>', ProductViewSet.as_view({
         'get': 'retrieve',
-        'post':'update',
+        'put':'update',
         'delete': 'destroy'
     })),
 
